@@ -1,3 +1,7 @@
+* {
+  font-size: 70px;
+  color: #fff;
+}
 /* .table {
     display: flex;
     align-items: center;
@@ -43,11 +47,17 @@ table {
     height: 100%;
   } */
 
-body{
+body {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-flow: column;
+  background: linear-gradient(
+    rgba(0, 0, 255, 0.8),
+    rgba(128, 0, 128, 0.8),
+    rgba(255, 192, 203, 0.8)
+  );
 }
 
 .container {
@@ -57,7 +67,7 @@ body{
   height: 310px;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
-  align-items:stretch;
+  align-items: stretch;
   gap: 5px;
   /* margin: 0 auto; */
   /* padding: 5px; */
@@ -65,11 +75,15 @@ body{
 }
 
 .item {
+  color: #fff;
   box-sizing: border-box;
-  background-color: #EEE;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #CCC;
+  border: 1px solid #fff;
   padding: 0;
+}
+.winner {
+  display: none;
 }
